@@ -9,11 +9,18 @@ body
 
 }
 h1{
-    color:aliceblue;
-    background-color:black;
+    color:rgb(0, 0, 0);
+    background-color:aquamarine
 }
 h2{
-    background-color: rgba(239, 88, 0, 0.795);
+    background-color:aquamarine
  
+}
+.Jag {
+    background-color:cadetblue;
+    width: 600px;
+    padding: 50px;
+    border:3px solid black;
+    margin:20px;
 }
 
