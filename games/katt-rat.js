@@ -59,9 +59,13 @@ function draw() {
       }
     
       
-       fill('blue')
+       fill('black')
     circle(catX,catY,catSize);
-      
+    triangle(catX-catSize/3,catY-catSize/3,catX,catY-catSize/3,catX-catSize/4,catY-catSize/1.2);
+    triangle(catX+catSize/3,catY-catSize/3,catX,catY-catSize/3,catX+catSize/4,catY-catSize/1.2);
+   fill('white');
+    triangle(catX-catSize/3, catY, catX-catSize/6, catY, catX-catSize/4, catY+catSize/5);
+    triangle(catX+catSize/6, catY, catX+catSize/3, catY, catX+catSize/4, catY+catSize/5);
       if (catched){
       fill(220,0,0,210);
       circle(mouseX,mouseY,mouseSize*3);
