@@ -1,26 +1,75 @@
 body
 {background-color: rgba(49, 82, 114, 0.493);
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: normal;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
     font-size: 16px;
     line-height: 1.7;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-align:left;
+    
+
 
 }
 h1{
-    color:rgb(0, 0, 0);
-    background-color:aquamarine
-}
-h2{
-    background-color:aquamarine
- 
-}
-.Jag {
-    background-color:cadetblue;
-    width: 600px;
-    padding: 50px;
-    border:3px solid black;
-    margin:20px;
+    color:rgb(255, 255, 255);
+    background-color:rgb(29, 119, 137);
+    width: 120px;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+
+.Jag {
+    background-color:cadetblue;
+    width: 650px;
+    padding: 20px;
+    border:3px solid rgb(0, 0, 0);
+    margin:0 auto;
+    
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.mig {
+    background-color:rgb(30, 97, 99);
+    width: 600px;
+    padding: 5px;
+    border:2px solid rgb(213, 14, 14);
+    margin:0 auto 15px;
+    
+   
+
+}
+.länkar{
+    background-color:rgb(30, 97, 99);
+    width: 600px;
+    padding: 10px;
+    border:2px solid rgb(205, 19, 19);
+    margin:0 auto;
+
+}
+
+a {
+    color:rgb(0, 255, 242);
+    text-decoration: none;
+}
+.Lite{
+    width: 110px;
+    background-color:rgb(29, 119, 137);
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+}
+
+h2{
+    color:rgb(255, 255, 255);
+    background-color:rgb(29, 119, 137);
+    width: 210px;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+   
