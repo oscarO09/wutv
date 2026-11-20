@@ -71,5 +71,10 @@ h2{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-
+.body {   color:rgb(255, 255, 255);
+    background-color:rgb(29, 119, 137);
+    width: 210px;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
    
