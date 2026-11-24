@@ -1,8 +1,12 @@
 let carX=100;
 let carY=100;
-let carSpeed=5;
+let carSpeed=8;
 let carH=100;
 let carW=50;
+
+//Mötande bil
+let oppositeCarX=100;
+let oppositeCarY=100;
 
 
 let gameState="START";
@@ -11,9 +15,11 @@ function setup() {
     createCanvas(400, 600);
     // Help blind or low-vision users understand your sketch
     describe("A 400 by 400 pixel gray canvas.");
+
+    oppositeCarX=random(40,width-40-carW);
   }
   
-function draw(){
+function draw() {
    background(220);
 
    if(gameState==="START"){
@@ -23,6 +29,7 @@ function draw(){
     text("Traffic", width/2, height/3);
     textSize(20);
     text("Tryck SPACE för att starta", width/2, height/2+40);
+   
    } else if (gameState=="PLAY") {
    
     background(`gray`);
@@ -45,6 +52,10 @@ function draw(){
     fill(`black`);
     rect(carX,500,carW,carH);
 
+    fill(`red`);
+    rect(oppositeCarX,oppositeCarY,carW,carH);
+
+
     if(keyIsDown(RIGHT_ARROW)){
         carX=carX+carSpeed;
     }
@@ -52,8 +63,15 @@ function draw(){
         carX=carX-carSpeed;
     }
     carX= constrain(carX,40,width-40-carW);
-   }
-}
+
+    oppositeCarY= oppositeCarY+carSpeed;
+
+    if(oppositeCarY>height){
+        oppositeCarY=-500;
+        oppositeCarX=random(40,width-40-carW);
+    }
+    
+}}
 
   function keyPressed(){
     if(keyCode==32){
