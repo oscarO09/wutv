@@ -6,3 +6,35 @@ body{
     font-style: italic;
     
 }
+.navbar {
+    display: flex;
+    justify-content: center;
+
+}
+.navlinks a {
+    color: rgb(37, 155, 198);
+    text-decoration: none;
+
+}
+.navlinks {
+display:flex;
+gap: 30px;
+list-style: none;
+margin:0;
+padding:0;
+}
+
+.navlinks a:hover {
+    color: rgb(37, 198, 155);
+    text-decoration: underline;
+}
+
+.navbar a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: rgb(37, 198, 155);
+    text-decoration: underline;
+}

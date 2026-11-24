@@ -1,0 +1,89 @@
+
+
+
+
+
+.pankakor {
+    background-color:rgb(255, 196, 0);
+    width: 283px;
+    padding: 20px;
+    border:3px solid rgb(0, 0, 0);
+    text-align: left;
+}
+.box{
+    background-color:rgb(30, 97, 99);
+    width: 800px;
+    padding: 5px;
+    border:2px solid rgb(255, 140, 0);
+    margin:0 auto 15px;
+    text-align: left;
+    color:black
+    
+}
+
+img {
+    width: 250px;
+    margin:0 auto;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(#F4CE99,#ECAD62);
+  
+    color: rgb(255, 255, 255);
+    line-height: 1.8;
+    font-style: italic;
+    
+}
+
+
+
+.navbar {
+    display: flex;
+    justify-content: center;
+
+}
+.navlinks a {
+    color: rgb(37, 155, 198);
+    text-decoration: none;
+
+}
+.navlinks {
+display:flex;
+gap: 30px;
+list-style: none;
+margin:0;
+padding:0;
+}
+
+.navlinks a:hover {
+    color: rgb(37, 198, 155);
+    text-decoration: underline;
+}
+
+.navbar a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: rgb(37, 198, 155);
+    text-decoration: underline;
+}
+
+.link {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.link h2:hover {
+    color: rgb(37, 198, 155);
+    text-decoration: underline;
+}
+
+.link h2 {
+    display:inline;
+}
