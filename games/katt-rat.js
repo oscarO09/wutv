@@ -78,7 +78,8 @@ function draw() {
   } else if (gameState=="GAMEOVER"){
     //Rita upp "GAMEOVER"
     textSize(40)
-    text("Game Over!",width/2,height/2)
+    text("Game Over!",width/2,height/2);
+    
     
   }
 

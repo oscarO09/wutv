@@ -1,4 +1,4 @@
-let carX=100;
+let carX=100; 
 let carY=100;
 let carSpeed=8;
 let carH=100;
@@ -50,7 +50,7 @@ function draw() {
     stroke(`white`)
     strokeWeight(1);
     fill(`black`);
-    rect(carX,500,carW,carH);
+    rect(carX,475,carW,carH);
 
     fill(`red`);
     rect(oppositeCarX,oppositeCarY,carW,carH);
@@ -68,9 +68,19 @@ function draw() {
 
     if(oppositeCarY>height){
         oppositeCarY=-500;
-        oppositeCarX=random(40,width-40-carW);
+        oppositeCarX=floor(random(40,width-40-carW));
     }
-    
+    if(carX<oppositeCarX+carW && carX+carW>oppositeCarX && 475<oppositeCarY+carH && 475+carH>oppositeCarY){
+        gameState="GAMEOVER";
+        oppositeCarY=0
+    }
+  
+  } else if (gameState=="GAMEOVER"){
+    //Rita upp "GAMEOVER"
+    textSize(40)
+    text("Game Over!",width/2,height/2)
+    textSize(20);
+    text("Press Spacebar To Start",width/2,height-height/3);
 }}
 
   function keyPressed(){
